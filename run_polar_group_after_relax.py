@@ -53,10 +53,11 @@ def extract_polar_only(file_path: str, delimiter: str = ' '):
             for row in reader:
                 if not row:
                     continue
-                total_rows += 1
+
                 if len(row) < 11:
                     continue  # Skip incomplete rows
 
+                total_rows += 1
                 filename = row[1].strip()
                 formula = row[3].strip()
                 num_atoms = row[7].strip()
