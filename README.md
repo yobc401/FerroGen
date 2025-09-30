@@ -43,7 +43,7 @@ Yeo, B. C., Kang, S., & Lee, J.-H. (2025). *Diffusion–Model–Driven Discovery
   - `4.cif/` — folder containing structures relaxed with SevenNet-0
 
 
-### `3.screening_for_band_gap_and_synthesizability.sh`
+### `3.screening_for_band_gap.sh`
 - **Input**:  
   - `4.cif/` — folder containing structures relaxed with SevenNet-0 (output from step 2)  
 - **Process**:  
