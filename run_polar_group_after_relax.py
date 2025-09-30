@@ -91,9 +91,9 @@ def print_and_copy_polar(file_data_polar: dict, total_rows: int, matched_rows: i
         print(f"Matching rate (polar only): {rate:.2f}% ({matched_rows}/{total_rows})")
 
     for filename, rec in file_data_polar.items():
-        # Copy file with new name: prepend '2' to filename
-        src_file = '3-2'+filename[1:-4]+'_sym.cif'
-        dest_file = '4' + filename[1:] if len(filename) >= 1 else '4' + filename
+        # Copy file with new name
+        src_file = filename
+        dest_file = '4' + filename[3:] if len(filename) >= 1 else '4' + filename
         command = f'cp "{src_file}" "{dest_file}"'
         subprocess.run(command, shell=True)
         print(
