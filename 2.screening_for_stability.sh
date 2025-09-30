@@ -2,7 +2,7 @@
 
 mkdir 3.cif 3-1.cif 3-2.cif 4.cif
 
-## Filter polar space group
+## Consider oxidation state
 python run_oxidation_state.py result_polar_group.txt > result_oxidation_state.txt
 
 ## Run SevenNet-0
